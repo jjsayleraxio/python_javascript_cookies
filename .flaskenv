@@ -1,0 +1,1 @@
+FLASK_APP=python_js_cookie_test.py
