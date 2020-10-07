@@ -10,5 +10,11 @@
     </p>
     <p>{{ form.submit() }}</p>
 </form>
+<span id="output"></span>
+<script>
+    var session_cookie = parse_session();
+    $('#output').html("session cookie currently set to: <b>" + session_cookie['USERCOOKIE'] + "</b>");
+    console.log(session_cookie['USERCOOKIE']);
 
+</script>
 {% endblock %}
