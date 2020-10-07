@@ -1,0 +1,17 @@
+<html>
+
+<head>
+    {% if title %}
+    <title>{{ title }} - Test App</title>
+    {% else %}
+    <title>Welcome to Cookie Test App</title>
+    {% endif %}
+</head>
+
+<body>
+    <div>Test App: <a href="/index">Home</a></div>
+    <hr>
+    {% block content %}{% endblock %}
+</body>
+
+</html>
